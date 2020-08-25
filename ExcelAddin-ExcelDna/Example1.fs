@@ -34,3 +34,4 @@ module Example1 =
     let testObservable (str: string) =
         FsAsyncUtil.excelObserve "test" [|str|]
             (performOnEvent (createTimer 5000.) funTest)
+
